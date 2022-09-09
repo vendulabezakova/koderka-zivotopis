@@ -4,16 +4,23 @@ body {
   padding: 0;
 }
 
+header {
+  position: fixed;
+  top:0%;
+  width: 100%;
+  background-color: white;
+}
+
 header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 header li {
-
   padding: 40px 40px;
   font-size: 1.5em;
 }
@@ -27,14 +34,17 @@ h1, h2, h3 {
   color: #656d4a;
   font-weight: 600;
   padding: 0 80px 30px 80px;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 5em;
+  padding: 0 0 30px 180px;
 }
 
 h2 {
   font-size: 3em;
+  padding: 10px 80px;
 }
 
 .intro img {
@@ -43,7 +53,7 @@ h2 {
 }
 
 .intro p {
-  padding: 30px 300px 30px 80px
+  padding: 30px 300px 30px 180px
 }
 
 .contact img {
@@ -51,15 +61,16 @@ h2 {
 }
 
 section {
-  padding: 60px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 p {
-  padding: 30px 80px;
+  padding: 20px 80px;
   font-size: 1.2em;
+  line-height: 1.5;
 }
 
 .right {
@@ -70,12 +81,28 @@ p {
   width: 50%;
 }
 
-.strenghts .right{
+.strenghts {
+  padding: 80px 80px;
+}
+
+.strenghts .right {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   grid-gap: 20px;
 }
+
+.skills {
+  padding: 30px 300px 30px 100px;
+  display:inline;
+}
+
+.test {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
 
 a.button {
   -webkit-appearance: button;
@@ -83,6 +110,88 @@ a.button {
   appearance: button;
   text-decoration: none;
   background-color: #7f5539;
-  padding: 7px;
+  padding: 10px 30px;
   border-radius: 5px;
+  color: white;
 }
+
+a.button:active {
+  background-color: #66432c;
+  color: white;
+}
+
+a.button:hover {
+  background-color: #66432c;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #7f5539;
+}
+
+a:active {
+  color: #66432c;
+}
+
+a:hover {
+  color: #66432c;
+}
+
+.certificates {
+  background-color: #414833;
+  margin: 50px 280px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.experiences {
+  margin: 50px 280px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tiles {
+  padding: 20px;
+  background-color: #656d4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border-radius: 10px;
+  color: white;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.logos img {
+  height: 150px;
+  padding: 0 40px;
+}
+
+.logos a {
+  color: white;
+  text-decoration: none;
+}
+
+
+footer {
+  font-size: 10px;
+  background-color: #414833;
+  padding: 20px 0;
+  color: white;
+}
+
+.vl {
+  border-left: 1px solid green;
+  height:300px;
+  position: absolute;
+  top: 2250px;
+}
+

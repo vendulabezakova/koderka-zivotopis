@@ -1,3 +1,4 @@
+/*layout*/
 body {
   font-family: 'Montserrat Alternates', sans-serif;
   margin: 0;
@@ -6,6 +7,25 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+section {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  width: 50%;
+}
+
+.contact img {
+  width: 50%;
 }
 
 /*typo*/
@@ -33,6 +53,7 @@ p {
   line-height: 1.5;
 }
 
+/*header*/
 header {
   position: fixed;
   top:0%;
@@ -59,38 +80,22 @@ header li a {
   color: #a68a64;
 }
 
+/*mobile menu*/
+span, #touch {
+  visibility: hidden;
+}
+
+/*intro*/
 .intro img {
   width: 100%;
   float: right;
   padding-top: 80px;
 }
 
-
 .intro p {
   padding: 30px 300px 30px 180px;
   font-size: 28px;
 }
-
-.contact img {
-  width: 50%;
-
-}
-
-section {
-  padding: 30px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.right {
-  width: 50%;
-}
-
-.left {
-  width: 50%;
-}
-
 
   /*.strenghts .right {
 display: grid;
@@ -99,6 +104,7 @@ display: grid;
   grid-gap: 10px;
 }*/
 
+/*skills*/
 .skills {
   color: white;
   text-align: center;
@@ -118,6 +124,7 @@ display: grid;
   align-items: center;
 }
 
+/*button*/
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -139,6 +146,7 @@ a.button:hover {
   color: white;
 }
 
+/*hypertext*/
 a {
   text-decoration: none;
   color: #7f5539;
@@ -152,6 +160,7 @@ a:hover {
   color: #66432c;
 }
 
+/*green blocks*/
 .certificates {
   background-color: #414833;
   margin: 50px 280px;
@@ -167,6 +176,7 @@ a:hover {
   display: block;
 }
 
+/*experiences*/
 .experiences {
   margin: 50px 280px;
   border-radius: 10px;
@@ -174,6 +184,7 @@ a:hover {
   justify-content: center;
 }
 
+/*strenghts*/
 .tiles {
   padding: 20px;
   background-image: linear-gradient(to right, #656d4a , #414833);
@@ -186,14 +197,12 @@ a:hover {
   margin: 20px 50px;
 }
 
-span, #touch {
-  visibility: hidden;
-}
-
+/*contact*/
 #contact a {
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   align-items: center;
+  padding: 8px 80px;
 }
 
 .logos {
@@ -212,7 +221,7 @@ span, #touch {
   text-decoration: none;
 }
 
-
+/*footer*/
 footer {
   font-size: 10px;
   background-color: #414833;
@@ -227,8 +236,9 @@ footer {
   top: 2530px;
 }*/
 
-
+/*respo*/
 @media only screen and (max-width: 844px) {
+  /*typo*/
   h1, h2, h3 {
     color: #656d4a;
     font-weight: 600;
@@ -236,24 +246,27 @@ footer {
     line-height: 1.5;
   }
 
+  h1 {
+    font-size: 2em;
+    padding: 20px 30px 0 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+    padding: 30px;
+  }
+
   p {
     font-size: 16px;
     padding: 10px 30px;
   }
 
+  /*layout*/
+
   section {
     padding: 30px 0;
     display: flex;
     align-items: center;
-  }
-
-  .intro p {
-    font-size: 18px;
-    padding: 30px;
-  }
-
-  .intro img {
-    width: 100%;
   }
 
   .right {
@@ -264,6 +277,7 @@ footer {
     width: 100%;
   }
 
+  /*contact*/
   .contact img {
     width: 100%;
   }
@@ -272,17 +286,23 @@ footer {
     font-size:16px;
     padding: 8px 30px;
   }
-  
-  h1 {
-    font-size: 2em;
-    padding: 20px 30px 0 30px;
-  }
 
-  h2 {
-    font-size: 26px;
+  /*intro*/
+  .intro p {
+    font-size: 18px;
     padding: 30px;
   }
-  
+
+  .intro img {
+    width: 100%;
+  }
+
+  .intro img {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*header*/
   header ul {
     list-style-type: none;
     margin: 0;
@@ -295,10 +315,10 @@ footer {
     font-size: 21px; 
   }
 
-  
+  /*mobile menu*/
   span {
     padding: 20px;
-    background : #7f5539; 
+    background : #414833; 
     color : white;
     font-size : 1.2em;
     cursor : pointer;
@@ -332,6 +352,7 @@ footer {
   
   #touch:checked + .dropdown {height: 300px;} 
 
+  /*green blocks*/
   .overview {
     background-color: #414833;
     border-radius: 10px;
@@ -356,7 +377,6 @@ footer {
   }
 
   .skills {
-    color: #414833;
     text-align: center;
   }
 
@@ -384,6 +404,7 @@ footer {
     margin: 20px 20px;
   }
 
+  /*experiences - this section needs change an order of items on mobile :-(*/
   .experiences {
     margin: 20px 20px;
     border-radius: 10px;
@@ -391,11 +412,7 @@ footer {
     justify-content: center;
   }
 
-  .intro img {
-    width: 100%;
-    padding-top: 0;
-  }
-
+  /*footer*/
   footer {
     padding: 3px;
     margin-top: 30px

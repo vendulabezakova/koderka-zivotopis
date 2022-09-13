@@ -13,42 +13,46 @@
 </head>
 <body>
   <header>
-    <ul>
-      <li>
-        <a href="#strenghts">strenghts</a>
-      </li>
-      <li>
-        <a href="#skills">skills</a>
-      </li>
-      <li>
-        <a href="#experiences">experiences</a>
-      </li>
-      <li>
-        <a href="#certificates">certificates</a>
-      </li>
-      <li>
-        <a href="#contact" class="button">contact</a>
-      </li>
-    </ul>
-
+    <nav>
+      <label for="touch"><span>Menu</span></label>               
+      <input type="checkbox" id="touch"> 
+        <ul class="dropdown">
+          <li>
+            <a href="#strenghts">strenghts</a>
+          </li>
+          <li>
+            <a href="#skills">skills</a>
+          </li>
+          <li>
+            <a href="#experiences">experiences</a>
+          </li>
+          <li>
+            <a href="#certificates">certificates</a>
+          </li>
+          <li>
+            <a href="#contact" class="button">contact</a>
+          </li>
+        </ul>
+    </nav>
   </header>
 
   <section class="intro">
     <div class="left">
     <h1>I am Vendula, <br>
       webmaster</h1>
-      <p style="font-size: 28px;">My goal is to keep our websites functional, intuitive, useful and easy to use.</p>
+      <p>My goal is to keep our websites functional, intuitive, useful and easy to use.</p>
     </div>
     <div class="right">
       <img src="images/vendula-bezakova-profile-photo.jpg">
     </div>
   </section>
 
-  <section class="strenghts">
+  <section class="strenghts" id="strenghts">
     <div class="left">
-    <h2>What are my strongest sides and skills?
+    <h2>What are my strongest sides?
     </h2>
     <p>The StrengthsFinder assessment is a personal development tool developed by Gallup Education, which provides an individual with their “Top 5” strengths. 34 different strength themes are divided into four domains of Strategic Thinking, Relationship Building, Influencing and Executing. Which are mine?</p>
+    <p>I love exploring and to be curious. I think deeply and often. I share my visions of better future. I'm using my passion for learning to add value to my own and others' lives. My connections are deeply.</p>
   </div>
   <div class="right" style="text-align: center;">
     <p class="tiles">Learner</p>
@@ -56,28 +60,29 @@
     <p class="tiles">Intellection</p>
     <p class="tiles">Input</p>
     <p class="tiles">Relator</p>
-    <p class="tiles">Empathy</p>
   </div>
   </section>
 
-  <section class="certificates">
+
+  <section class="overview" id="skills">
     <h2 style="text-align: center; color: white;">Overview of my skills
     </h2>
-    <div class="test">
-      <div>HTML </div>
-      <div>CSS </div>
-      <div>Kentico CMS </div>
-      <div>Wordpress CMS </div>
-      <div>Bootstrap </div>
-      <div>Django Basics </div>
-      <div>SEO </div>
-      <div>Visual Studio Code </div>
-      <div>Google Search Console </div>
+    <div class="skills">
+      <ul>
+        <li>HTML/CSS</li>
+        <li>Bootstrap</li>
+        <li>Kentico CMS</li>
+        <li>Wordpress CMS</li>
+        <li>Django Basics</li>
+        <li>SEO</li>
+        <li>Visual Studio Code</li>
+        <li>Google Search Console</li>
+      </ul>
     </div>
   </section>
 
-  <section class="experiences">
-    <div class="vl"></div>
+  <section class="experiences" id="experiences">
+    <!--<div class="vl"></div> #vertikalni linka-->
     <h2 style="text-align: center;">Working experiences</h2>
     <div class="left">
       <p style="text-align:right"><b>11/2020 - now</b><br>
@@ -99,7 +104,7 @@
   </div>
   </section>
 
-  <section class="certificates" style="color: white;">
+  <section class="certificates" style="color: white;" id="certificates">
     <div class="left">
       <h2  style="color: white;">Certificates,<br>
       & trainings</h2>
@@ -125,15 +130,15 @@
   </section>
 
 
-  <section class="intro" style="padding-bottom: 0">
+  <section class="intro" style="padding-bottom: 0" id="contact">
     <div class="left">
-      <img src="images/vendula-bezakova-profile-photo.jpg">
+      <img src="images/vendula-loves-memes.jpg">
     </div>
-    <div class="right">
+    <div class="right" id="contact">
       <h2>Feel free to contact me</h2>
-      <p><i class="fa fa-envelope" style="font-size:48px;color:#414833;padding-right: 10px;"></i><a href="mailto:vendula.bezakova@gmail.com">vendula.bezakova@gmail.com</a></p>
-      <p><i class="fa fa-linkedin" style="font-size:48px;color:#414833;padding-right: 10px"></i><a href="https://www.linkedin.com/in/vendula-bezakova/">Linkedin</a></p>
-      <p><i class="fa fa-github" style="font-size:48px;color:#414833;padding-right: 10px"></i><a href="https://github.com/vendulabezakova">Github</a></p>
+      <p><a href="mailto:vendula.bezakova@gmail.com"><i class="fa fa-envelope" style="font-size:48px;color:#414833;padding-right: 15px;"></i>vendula.bezakova@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/vendula-bezakova/"><i class="fa fa-linkedin" style="font-size:48px;color:#414833;padding-right: 15px"></i>Linkedin</a></p>
+      <p><a href="https://github.com/vendulabezakova"><i class="fa fa-github" style="font-size:48px;color:#414833;padding-right: 15px"></i>Github</a></p>
 
 
     </div>
@@ -142,6 +147,8 @@
   <footer>
     <p>&copy; Copyright 2022, Vendula Bezáková</p>
   </footer>
+
+
 
 </body>
 </html>
